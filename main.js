@@ -1,3 +1,7 @@
+const born = 3;
+const min = 2;
+const max = 3;
+
 const ecran = [...document.querySelectorAll(".cellule")];
 
 const auto = document.getElementById("auto");
@@ -35,7 +39,7 @@ function gen() {
                     nbA++;
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                 }
 
@@ -54,7 +58,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                 }
             }
@@ -80,7 +84,7 @@ function gen() {
                     console.log(nbA);
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                 }
 
@@ -99,7 +103,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                 }
             }
@@ -122,7 +126,7 @@ function gen() {
                     nbA++;
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                     
                 }
@@ -142,7 +146,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                     
                 }
@@ -166,7 +170,7 @@ function gen() {
                     nbA++;
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                     
                 }
@@ -186,7 +190,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                     
                 }
@@ -222,7 +226,7 @@ function gen() {
                     
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                 }
 
@@ -250,7 +254,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                     
                 }
@@ -287,7 +291,7 @@ function gen() {
                     
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                 }
 
@@ -315,7 +319,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                     
                 }
@@ -356,7 +360,7 @@ function gen() {
                     
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                 }
 
@@ -384,7 +388,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                     
                 }
@@ -425,7 +429,7 @@ function gen() {
                     
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                 }
 
@@ -453,7 +457,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                     
                 }
@@ -506,7 +510,7 @@ function gen() {
                     nbA++;
                 }
 
-                if(nbA < 2 || nbA > 3) {
+                if(nbA < min || nbA > max) {
                     ecran[i].style.background = "red";
                 }
 
@@ -546,7 +550,7 @@ function gen() {
                     nbB++;
                 }
 
-                if(nbB == 3) {
+                if(nbB == born) {
                     ecran[i].style.background = "green";
                 }
             }
@@ -567,7 +571,7 @@ function gen() {
 next.addEventListener("click", gen);
 
 function genAuto() {
-    interval = setInterval(gen, 250);
+    interval = setInterval(gen, 100);
 }
 
 auto.addEventListener("click", genAuto);
